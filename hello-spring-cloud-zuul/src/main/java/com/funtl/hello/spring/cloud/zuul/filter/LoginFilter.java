@@ -3,7 +3,6 @@ package com.funtl.hello.spring.cloud.zuul.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-import org.apache.http.protocol.RequestContent;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,11 +11,7 @@ import java.io.IOException;
 
 @Component
 public class LoginFilter extends ZuulFilter {
-    //过滤器类型:
-    //1.pre路由前
-    //2.routing路由时
-    //3.post路由后
-    //4.error发送错误调用
+    //过滤器类型:1.pre路由前；2.routing路由时；3.post路由后；4.error发送错误调用
     @Override
     public String filterType() {
         return "pre";
