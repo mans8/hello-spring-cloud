@@ -23,7 +23,8 @@ public class WebAdminFeignFallbackProvider implements FallbackProvider {
 
     @Override
     public ClientHttpResponse fallbackResponse(String route, Throwable cause) {
-        return new ClientHttpResponse() {            @Override
+        return new ClientHttpResponse() {
+            @Override
             public HttpStatus getStatusCode() throws IOException {
                 return HttpStatus.OK;
             }
