@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/mans8/hello-spring-cloud.git
+          search-paths: spring-cloud-config/repo
+          username: xxxxxx@qq.com
+          password: xxxxxx
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
