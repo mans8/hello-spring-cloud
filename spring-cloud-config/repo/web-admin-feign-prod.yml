@@ -7,6 +7,10 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
 server:
   port: 8766
 feign:
