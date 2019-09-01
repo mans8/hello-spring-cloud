@@ -8,8 +8,10 @@ spring:
         git:
           uri: https://github.com/mans8/hello-spring-cloud.git
           search-paths: spring-cloud-config/repo
-          username: xxxxxx@qq.com
-          password: xxxxxx
+          username: xxx@qq.com
+          password: xxx
+  zipkin:
+    base-url: http://localhost:9411
 server:
   port: 8888
 
